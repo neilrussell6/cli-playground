@@ -8,13 +8,11 @@ const LoggerEffects = require('../common/logger/logger.effects')
 const commandYargs = () => yargs
   .usage('sum [x] [y]')
   .positional('x', {
-    alias: 'x',
     required: true,
     description: 'first variable to sum',
     type: 'number',
   })
   .positional('y', {
-    alias: 'y',
     required: true,
     description: 'first variable to sum',
     type: 'number',
