@@ -4,7 +4,6 @@ const { ERROR_REQUIRED } = require('./sum.constants')
 
 // extractRequired :: Obj -> [Int, Int]
 const extractRequired = R.compose(
-  R.values,
   R.slice(1, 3),
   R.prop('_'),
 )
